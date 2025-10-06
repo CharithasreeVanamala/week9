@@ -7,16 +7,17 @@ spec:
   selector:
     matchLables:
       app: kubedemoapp
-    template:
-      metadata:
-        labels:
-          app: kubedemoapp
-      spec:
-        containers:
-          - name: kubedemoapp
-            image: charithasree37/sample:kubeimage
-            ports:
-              - containerPort: 5000
+  template:
+    metadata:
+      labels:
+        app: kubedemoapp
+    spec:
+      containers:
+        - name: kubedemoapp
+          image: charithasree37/sample:kubeimage
+          ports:
+            - containerPort: 5000
+
 
 
 
